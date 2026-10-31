@@ -1,0 +1,99 @@
+:root {
+  --bg: #0d1017;
+  --bg-2: #141924;
+  --card: #181e2b;
+  --line: #262e3f;
+  --text: #e8ecf3;
+  --muted: #9aa4b6;
+  --accent: #4f8cff;
+  --accent-2: #7a5cff;
+  --radius: 16px;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+/* Kopf */
+header.site {
+  border-bottom: 1px solid var(--line);
+  background: rgba(13, 16, 23, .85);
+  backdrop-filter: blur(8px);
+  position: sticky; top: 0; z-index: 10;
+}
+header.site .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--text); font-weight: 700; letter-spacing: .2px; }
+.brand:hover { text-decoration: none; }
+.brand .logo {
+  width: 32px; height: 32px; border-radius: 9px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  display: grid; place-items: center; font-weight: 800; color: #fff; font-size: 17px;
+}
+nav.site a { color: var(--muted); margin-left: 20px; font-size: 15px; }
+nav.site a:hover, nav.site a[aria-current="page"] { color: var(--text); text-decoration: none; }
+
+/* Startseite */
+.hero { padding: 72px 0 40px; }
+.hero h1 { font-size: clamp(32px, 5vw, 48px); line-height: 1.15; margin: 0 0 16px; letter-spacing: -.5px; }
+.hero h1 span {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.hero p { color: var(--muted); font-size: 18px; max-width: 620px; margin: 0; }
+
+h2.section { font-size: 22px; margin: 48px 0 16px; }
+.apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.app {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 22px; display: flex; flex-direction: column; gap: 10px;
+}
+.app h3 { margin: 0; font-size: 19px; }
+.app p { margin: 0; color: var(--muted); font-size: 15px; flex: 1; }
+.badge {
+  display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: .3px;
+  padding: 3px 9px; border-radius: 999px; background: var(--bg-2); border: 1px solid var(--line); color: var(--muted);
+  align-self: flex-start;
+}
+.badge.live { color: #5fd38d; border-color: #24533a; background: #11261b; }
+.links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 14px; margin-top: 4px; }
+
+.contact {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 22px; display: grid; gap: 6px;
+}
+.contact p { margin: 0; color: var(--muted); }
+.social { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+.social a {
+  border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; color: var(--text); font-size: 14px;
+}
+.social a:hover { border-color: var(--accent); text-decoration: none; }
+
+/* Textseiten */
+article.doc { padding: 48px 0 24px; max-width: 760px; }
+article.doc h1 { font-size: clamp(28px, 4vw, 36px); margin: 0 0 6px; line-height: 1.2; }
+article.doc .stand { color: var(--muted); margin: 0 0 28px; font-size: 15px; }
+article.doc h2 { font-size: 19px; margin: 32px 0 8px; }
+article.doc p, article.doc li { color: #cfd6e2; }
+article.doc ul { padding-left: 20px; }
+article.doc .box {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 20px; margin: 16px 0;
+}
+article.doc .box p { margin: 4px 0; }
+
+footer.site { border-top: 1px solid var(--line); margin-top: 64px; padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
+footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+footer.site a { color: var(--muted); margin-right: 16px; }
+footer.site a:hover { color: var(--text); }
+
+@media (max-width: 560px) {
+  nav.site a { margin-left: 12px; font-size: 14px; }
+  .hero { padding-top: 48px; }
+}
