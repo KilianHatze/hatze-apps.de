@@ -5,66 +5,154 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hatze Apps – Apps von Kilian Hatze</title>
 <meta name="description" content="Apps von Kilian Hatze aus Heßheim: IPTV Pro Hatze Player, HatzeFit und Lernen Hatze.">
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#eef1ec">
+<link rel="preload" href="/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:title" content="Hatze Apps">
+<meta property="og:description" content="Apps von Kilian Hatze: IPTV Pro Hatze Player, HatzeFit und Lernen Hatze.">
+<meta property="og:image" content="https://hatze-apps.de/img/og.png">
+<meta property="og:url" content="https://hatze-apps.de/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Organization","name":"Hatze Apps","url":"https://hatze-apps.de/","logo":"https://hatze-apps.de/apple-touch-icon.png","email":"kilihatze@gmail.com",
+  "founder":{"@type":"Person","name":"Kilian Hatzenbühler","alternateName":"Kilian Hatze"},
+  "address":{"@type":"PostalAddress","streetAddress":"Hauptstraße 46","postalCode":"67258","addressLocality":"Heßheim","addressCountry":"DE"},
+  "sameAs":["https://www.youtube.com/channel/UCroXoni4uDEtejKwLnq33kw","https://www.instagram.com/iptvprohatze/"]},
+ {"@type":"MobileApplication","name":"IPTV Pro Hatze Player","operatingSystem":"Android, Android TV","applicationCategory":"MultimediaApplication",
+  "url":"https://hatze-apps.de/#iptv","installUrl":"https://play.google.com/store/apps/details?id=com.hatze.iptvpro","image":"https://hatze-apps.de/img/icon-iptv.webp",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"author":{"@type":"Person","name":"Kilian Hatze"}}
+]}
+</script>
 </head>
 <body>
-<header class="site"><div class="wrap">
-  <a class="brand" href="index.html"><span class="logo">H</span>Hatze Apps</a>
-  <nav class="site"><a href="index.html#apps" aria-current="page">Apps</a><a href="index.html#support">Support</a><a href="impressum.html">Impressum</a></nav>
+<header class="kopf"><div class="rahmen">
+  <a class="marke" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#17201c"/><rect x="15" y="14" width="9" height="36" rx="4.5" fill="#e9b949"/><rect x="40" y="14" width="9" height="36" rx="4.5" fill="#b9eed0"/><rect x="15" y="28" width="34" height="8" rx="4" fill="#f2c94c" transform="rotate(-8 32 32)"/></svg>Hatze Apps</a>
+  <nav aria-label="Hauptnavigation"><a href="/#iptv">IPTV Pro</a><a href="/#hatzefit">HatzeFit</a><a href="/#lernen">Lernen Hatze</a><a href="/#kontakt">Support</a></nav>
 </div></header>
-<main class="wrap">
+<main>
 
-<section class="hero">
-  <h1>Apps, die einfach <span>funktionieren</span>.</h1>
-  <p>Ich bin Kilian Hatze, unabhängiger App-Entwickler aus Heßheim. Ich baue werbefreie Apps für Android, Android TV und das Web – ohne Tracking-Spielereien und mit Fokus auf das Wesentliche.</p>
+<div class="rahmen einstieg">
+  <div>
+    <h1>Hatze<br>Apps</h1>
+    <p>Apps für Android, Android TV und das Web. Werbefrei, ohne Konto-Zwang und ohne Weitergabe deiner Daten. Entwickelt von <strong>Kilian Hatze</strong> in Heßheim in der Pfalz.</p>
+  </div>
+  <ul class="app-wahl" aria-label="Die Apps">
+    <li><a href="#iptv"><img src="/img/icon-iptv.webp" width="256" height="256" alt=""><div><b>IPTV Pro Hatze Player</b><span>Player für eigene Playlists</span></div><span class="zustand live">Im Play Store</span></a></li>
+    <li><a href="#hatzefit"><img src="/img/icon-hatzefit.webp" width="256" height="256" alt=""><div><b>HatzeFit</b><span>Ernährung und Training, offline</span></div><span class="zustand">Bald</span></a></li>
+    <li><a href="#lernen"><img src="/img/icon-lernen.webp" width="256" height="256" alt=""><div><b>Lernen Hatze</b><span>Prüfungsvorbereitung Fachinformatiker</span></div><span class="zustand">Web-Version</span></a></li>
+  </ul>
+</div>
+
+<section class="kapitel iptv" id="iptv" aria-labelledby="t-iptv">
+  <div class="rahmen">
+    <div class="kapitel-kopf">
+      <img src="/img/icon-iptv.webp" width="256" height="256" alt="App-Symbol IPTV Pro Hatze Player">
+      <div>
+        <h2 id="t-iptv">IPTV Pro Hatze Player</h2>
+        <p class="lead">Der moderne, werbefreie Player für deine eigenen M3U- und Xtream-Playlists. Auf Handy, Tablet und Android TV, mit Postern, TV-Programm und Weiterschauen.</p>
+      </div>
+    </div>
+    <div class="kapitel-inhalt">
+      <div>
+        <ul class="merkmale"><li><b>Live-TV, Filme und Serien</b><span>Aus deiner Playlist, sortiert mit Postern und Infos</span></li><li><b>TV-Programm</b><span>Liste oder Raster, bis zu sieben Tage im Voraus</span></li><li><b>Weiterschauen und Favoriten</b><span>Filme und Folgen starten genau dort, wo du aufgehört hast</span></li><li><b>Aufnahmen und Bild-in-Bild</b><span>Sendungen aufnehmen, nebenbei weiterschauen</span></li><li><b>Jugendschutz</b><span>PIN und eigenes Kinderprofil</span></li><li><b>Für die Fernbedienung gebaut</b><span>Auf Android TV und Google TV komplett mit dem Steuerkreuz bedienbar</span></li></ul>
+        <div class="aktionen">
+          <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.hatze.iptvpro"><img src="/img/google-play-badge.png" width="646" height="250" alt="Jetzt bei Google Play"></a>
+          <a class="knopf leise" href="/iptv-pro-hatze/datenschutz.html">Datenschutz</a>
+        </div>
+        <p class="kleingedruckt">Die App enthält keine Sender oder Inhalte. Du bringst deine eigene Playlist mit. <a href="/iptv-pro-hatze/datenschutz.html#loeschen">Konto und Cloud-Daten löschen</a></p>
+      </div>
+      <div class="handys"><figure class="handy" style="margin:0"><img src="/img/iptv-1.webp" width="480" height="853" alt="Startseite mit Live TV, Filmen, Serien und TV-Programm" loading="lazy"></figure><figure class="handy" style="margin:0"><img src="/img/iptv-2.webp" width="480" height="853" alt="TV-Programm mit laufender Sendung" loading="lazy"></figure><figure class="handy" style="margin:0"><img src="/img/iptv-3.webp" width="480" height="853" alt="Player mit Senderliste" loading="lazy"></figure><figure class="handy" style="margin:0"><img src="/img/iptv-4.webp" width="480" height="853" alt="Serienansicht mit Staffeln" loading="lazy"></figure></div>
+    </div>
+    <figure class="fernseher">
+      <div class="schirm"><img src="/img/iptv-tv.webp" width="1440" height="810" alt="IPTV Pro Hatze auf Android TV: Startseite mit Weiterschauen und neu hinzugefügten Titeln" loading="lazy"></div>
+      <div class="fuss"></div>
+      <figcaption>So sieht die App auf dem Fernseher aus. Alle Bilder zeigen Demo-Inhalte.</figcaption>
+    </figure>
+  </div>
 </section>
 
-<h2 class="section" id="apps">Apps</h2>
-<div class="apps">
-  <div class="app">
-    <span class="badge live">Im Play Store</span>
-    <h3>IPTV Pro Hatze Player</h3>
-    <p>Der moderne, werbefreie Player für deine eigenen M3U- und Xtream-Playlists – auf Handy, Tablet und Android TV. Die App enthält keine Sender oder Inhalte.</p>
-    <div class="links">
-      <a href="https://play.google.com/store/apps/details?id=com.hatze.iptvpro">Google Play</a>
-      <a href="iptv-pro-hatze/datenschutz.html">Datenschutz</a>
-      <a href="iptv-pro-hatze/datenschutz.html#loeschen">Konto löschen</a>
+<section class="kapitel fit" id="hatzefit" aria-labelledby="t-fit">
+  <div class="rahmen">
+    <div class="kapitel-kopf">
+      <img src="/img/icon-hatzefit.webp" width="256" height="256" alt="App-Symbol HatzeFit">
+      <div>
+        <span class="zustand-band">Bald im Play Store</span>
+        <h2 id="t-fit">HatzeFit</h2>
+        <p class="lead">Ernährungstagebuch, Trainingspläne und Fortschritt in einer App. Alles bleibt auf deinem Handy: kein Konto, kein Server, kein Tracking.</p>
+      </div>
+    </div>
+    <div class="kapitel-inhalt">
+      <div>
+        <ul class="merkmale"><li><b>Ernährungstagebuch</b><span>Lebensmittel per Barcode oder Suche, mit Kalorien und Nährwerten</span></li><li><b>Training</b><span>Eigene Pläne und ein Begleiter, der durch jedes Workout führt</span></li><li><b>Fortschritt</b><span>Gewicht, Körpermaße und Fortschrittsfotos im Verlauf</span></li><li><b>Schrittzähler</b><span>Optional, für einen realistischen Tagesbedarf</span></li><li><b>Komplett offline</b><span>Deine Daten verlassen das Gerät nicht</span></li></ul>
+        <div class="aktionen">
+          <a class="knopf" href="mailto:kilihatze@gmail.com?subject=HatzeFit%20%E2%80%93%20Bescheid%20geben">Bescheid geben, wenn sie erscheint</a>
+          <a class="knopf leise" href="/hatzefit/datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+      <div class="handys"><figure class="handy" style="margin:0"><img src="/img/fit-1.webp" width="480" height="1040" alt="Übersicht mit Kalorien und Nährwerten des Tages" loading="lazy"></figure><figure class="handy" style="margin:0"><img src="/img/fit-2.webp" width="480" height="1040" alt="Ernährungstagebuch mit Mahlzeiten" loading="lazy"></figure><figure class="handy" style="margin:0"><img src="/img/fit-3.webp" width="480" height="1040" alt="Workout-Begleiter beim Training" loading="lazy"></figure><figure class="handy" style="margin:0"><img src="/img/fit-4.webp" width="480" height="1040" alt="Fortschritt mit Gewichtsverlauf" loading="lazy"></figure></div>
     </div>
   </div>
-  <div class="app">
-    <span class="badge">Bald verfügbar</span>
-    <h3>HatzeFit</h3>
-    <p>Ernährungstagebuch, Trainingspläne und Fortschritt – komplett offline, ohne Konto und ohne Server.</p>
-    <div class="links">
-      <a href="hatzefit/datenschutz.html">Datenschutz</a>
-    </div>
-  </div>
-  <div class="app">
-    <span class="badge">Bald verfügbar</span>
-    <h3>Lernen Hatze</h3>
-    <p>Lernübersichten, Formelsammlung und Übungsprüfungen für die IT-Ausbildung zum Fachinformatiker Systemintegration.</p>
-    <div class="links">
-      <a href="https://kilianhatze.github.io/lernen-hatze/">Web-Version</a>
-      <a href="lernen-hatze/datenschutz.html">Datenschutz</a>
-    </div>
-  </div>
-</div>
+</section>
 
-<h2 class="section" id="support">Support &amp; Kontakt</h2>
-<div class="contact">
-  <p>Fragen, Fehler oder Wünsche zu einer App? Schreib mir – ich antworte in der Regel innerhalb weniger Tage.</p>
-  <p>E-Mail: <a href="mailto:kilihatze@gmail.com">kilihatze@gmail.com</a></p>
-  <div class="social">
-    <a href="https://www.youtube.com/channel/UCroXoni4uDEtejKwLnq33kw">YouTube</a>
-    <a href="https://www.instagram.com/iptvprohatze/">Instagram</a>
+<section class="kapitel lernen" id="lernen" aria-labelledby="t-lernen">
+  <div class="rahmen">
+    <div class="kapitel-kopf">
+      <img src="/img/icon-lernen.webp" width="256" height="256" alt="App-Symbol Lernen Hatze">
+      <div>
+        <span class="zustand-band">Im Browser verfügbar, bald im Play Store</span>
+        <h2 id="t-lernen">Lernen Hatze</h2>
+        <p class="lead">Prüfungsvorbereitung für Fachinformatiker Systemintegration: Lernübersichten, Übungen und komplette Übungsprüfungen für AP1 und AP2.</p>
+      </div>
+    </div>
+    <div class="kapitel-inhalt">
+      <div>
+        <ul class="merkmale"><li><b>Lernpfad</b><span>Alle Prüfungsthemen Schritt für Schritt, mit Sternen pro Thema</span></li><li><b>Übungsprüfungen</b><span>Unter echten Bedingungen, mit Auswertung</span></li><li><b>Karteikarten und Erklärungen</b><span>Zu jeder Antwort steht, warum sie stimmt</span></li><li><b>Erfolge und Lernserie</b><span>Damit du dranbleibst</span></li><li><b>Ohne Konto</b><span>Auf Android, Windows und im Browser, der Lernstand bleibt auf deinem Gerät</span></li></ul>
+        <div class="aktionen">
+          <a class="knopf" href="https://kilianhatze.github.io/lernen-hatze/">Im Browser öffnen</a>
+          <a class="knopf leise" href="/lernen-hatze/datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+      <div class="handys"><figure class="handy" style="margin:0"><img src="/img/lernen-1.webp" width="480" height="960" alt="Lernpfad mit Prüfungsthemen" loading="lazy"></figure><figure class="handy" style="margin:0"><img src="/img/lernen-2.webp" width="480" height="960" alt="Übungsfrage mit Erklärung" loading="lazy"></figure><figure class="handy" style="margin:0"><img src="/img/lernen-3.webp" width="480" height="960" alt="Übungsprüfung" loading="lazy"></figure><figure class="handy" style="margin:0"><img src="/img/lernen-4.webp" width="480" height="960" alt="Erfolge" loading="lazy"></figure></div>
+    </div>
   </div>
-</div>
+</section>
+
+<section class="rahmen grundsaetze" aria-labelledby="t-grund">
+  <h2 id="t-grund">Woran du dich bei allen Apps verlassen kannst</h2>
+  <div class="drei">
+    <div><h3>Keine Werbung</h3><p>Keine Banner und keine Werbevideos, in keiner App. Zusatzfunktionen gibt es höchstens als faire, optionale Premium-Version.</p></div>
+    <div><h3>Deine Daten bleiben bei dir</h3><p>Inhalte und Einstellungen speichern die Apps auf deinem Gerät. Ein Cloud-Backup gibt es nur, wenn du es selbst einschaltest, und nur in deinem eigenen Konto.</p></div>
+    <div><h3>Ein Entwickler, echte Antworten</h3><p>Hinter allen Apps stehe ich persönlich. Wenn du schreibst, liest das kein Bot.</p></div>
+  </div>
+</section>
+
+<section class="rahmen ueber" id="kontakt" aria-labelledby="t-ueber">
+  <div>
+    <h2 id="t-ueber">Über mich</h2>
+    <p>Ich bin Kilian Hatze, unabhängiger App-Entwickler aus der Pfalz. Angefangen hat alles mit einem eigenen IPTV-Player, weil mir die vorhandenen zu alt, zu langsam oder zu voller Werbung waren. Inzwischen sind es drei Apps, gebaut mit Flutter und viel Liebe zum Detail.</p>
+    <p>Hatze Apps ist ein angemeldetes Einzelunternehmen mit Sitz in Heßheim. Die Angaben findest du im <a href="/impressum.html">Impressum</a>.</p>
+  </div>
+  <div class="kontakt">
+    <h3>Support</h3>
+    <p>Fragen, Fehler oder Wünsche zu einer App? Schreib mir, ich antworte meist innerhalb weniger Tage.</p>
+    <a class="mail" href="mailto:kilihatze@gmail.com">kilihatze@gmail.com</a>
+    <div class="kanaele">
+      <a href="https://www.youtube.com/channel/UCroXoni4uDEtejKwLnq33kw">YouTube</a>
+      <a href="https://www.instagram.com/iptvprohatze/">Instagram</a>
+    </div>
+  </div>
+</section>
 
 </main>
-<footer class="site"><div class="wrap">
-  <div>© 2026 Kilian Hatze · Heßheim</div>
-  <div><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="mailto:kilihatze@gmail.com">Kontakt</a></div>
+<footer class="fuss-seite"><div class="rahmen">
+  <div>© 2026 Kilian Hatze, Heßheim</div>
+  <nav aria-label="Rechtliches"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a><a href="mailto:kilihatze@gmail.com">Kontakt</a></nav>
+  <p class="marken">Google Play und das Google Play-Logo sind Marken von Google LLC.</p>
 </div></footer>
 </body>
 </html>

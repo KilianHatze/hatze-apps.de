@@ -1,4 +1,4 @@
 # hatze-apps.de
 
-Statische Website (GitHub Pages) mit Startseite, Impressum und den Datenschutzerklärungen der Apps.
-Änderungen direkt in den HTML-Dateien vornehmen; `style.css` gilt für alle Seiten.
+Statische Website (GitHub Pages): Startseite mit den drei Apps, Impressum und Datenschutzerklärungen.
+`style.css` gilt für alle Seiten. Bilder in `img/` (WebP), Schriften in `fonts/` (lokal, SIL Open Font License: Bricolage Grotesque, Atkinson Hyperlegible Next).
