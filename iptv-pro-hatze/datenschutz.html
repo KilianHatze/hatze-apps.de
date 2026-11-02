@@ -22,13 +22,13 @@
 
 <article class="doc">
 <h1>Datenschutzerklärung IPTV Pro Hatze Player</h1>
-<p class="stand">Stand: 31. Oktober 2026 · Gilt für die App auf Android und Android TV.</p>
+<p class="stand">Stand: 2. November 2026 · Gilt für die App auf Android und Android TV.</p>
 
 <h2>Verantwortlich</h2>
 <div class="box">
 <p><strong>Kilian Manuel Hatzenbühler</strong> (Entwicklername „Kilian Hatze“)</p>
 <p>Hauptstraße 46<br>67258 Heßheim<br>Deutschland</p>
-<p>E-Mail: <a href="mailto:kilihatze@gmail.com">kilihatze@gmail.com</a></p>
+<p>E-Mail: <a href="mailto:hatze.support@gmail.com">hatze.support@gmail.com</a></p>
 </div>
 
 <h2>1. Grundsatz</h2>
@@ -42,16 +42,18 @@
 
 <h2 id="loeschen">4. Konto und Cloud-Daten löschen</h2>
 <p>In der App: Einstellungen → Cloud-Sync → „Konto löschen“ → mit „Löschen“ bestätigen. Damit werden dein Konto in der App und das gesamte Cloud-Backup sofort und unwiderruflich gelöscht. Daten auf deinem Gerät bleiben erhalten, bis du die App deinstallierst.</p>
-<p>Alternativ schreibst du an <a href="mailto:kilihatze@gmail.com">kilihatze@gmail.com</a> und nennst die Google-Adresse, mit der du dich angemeldet hast. Die Löschung erfolgt dann innerhalb von 30 Tagen.</p>
+<p>Alternativ schreibst du an <a href="mailto:hatze.support@gmail.com">hatze.support@gmail.com</a> und nennst die Google-Adresse, mit der du dich angemeldet hast. Die Löschung erfolgt dann innerhalb von 30 Tagen.</p>
 
-<h2>5. Absturzberichte und Nutzungsstatistik</h2>
-<p>Die App nutzt Firebase Crashlytics (Absturzberichte, Geräte-Modell, Android-Version, App-Version) und Google Analytics for Firebase (Nutzungsereignisse, zum Beispiel wie oft ein Wiedergabehinweis angezeigt wurde, zusammen mit einer zufälligen Installations-ID; das ist pseudonym, nicht anonym). Es werden keine Sendernamen, Stream-Adressen oder Zugangsdaten übertragen. Die Daten sind nicht deinem Konto zugeordnet und werden von Google nach spätestens 90 Tagen gelöscht. Sie dienen ausschließlich der Fehlerbehebung und Verbesserung der App. Firebase wird von Google betrieben; dabei können Daten in die USA übermittelt werden. Google ist unter dem EU-US Data Privacy Framework zertifiziert.</p>
+<h2>5. Absturzberichte</h2>
+<p>Ab Version 1.3.7 fragt die App beim ersten Start, ob sie Absturzberichte senden darf. Nur wenn du zustimmst, nutzt sie Firebase Crashlytics. Bei einem Absturz werden dann technische Angaben übertragen: die Fehlermeldung mit dem Programmablauf, Geräte-Modell, Android-Version, App-Version und eine zufällige Installations-ID; das ist pseudonym, nicht anonym. Sendernamen, Stream-Adressen oder Zugangsdaten werden nicht übertragen, und die Berichte sind nicht deinem Konto zugeordnet. Sie dienen nur der Fehlerbehebung und werden von Google nach spätestens 90 Tagen gelöscht.</p>
+<p>Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG). Lehnst du ab, hat das keine Nachteile in der App. Du kannst deine Wahl jederzeit unter Einstellungen → System &amp; Hilfe → „Absturzberichte senden“ ändern; nach dem Ausschalten werden keine Berichte mehr gesendet und noch nicht gesendete verworfen. Firebase wird von Google betrieben; dabei können Daten in die USA übermittelt werden. Google ist unter dem EU-US Data Privacy Framework zertifiziert.</p>
+<p>Versionen bis 1.3.6 haben Absturzberichte ohne vorherige Abfrage gesendet und zusätzlich Google Analytics for Firebase genutzt (Ereignisse zum Hänger-Berater mit einer zufälligen Installations-ID). Ab Version 1.3.7 ist Google Analytics vollständig aus der App entfernt.</p>
 
 <h2>6. Premium-Abo</h2>
-<p>Käufe laufen über Google Play. Zur Prüfung des Abo-Status wird RevenueCat mit einer anonymen App-Nutzer-ID und den Kaufdaten von Google Play verwendet. Es werden keine Zahlungsdaten an die App übermittelt.</p>
+<p>Käufe laufen über Google Play. Zur Prüfung des Abo-Status nutzt die App RevenueCat (RevenueCat Inc., USA). Dabei werden eine zufällige App-Nutzer-ID, die Kaufdaten von Google Play und technische Angaben (Android-Version, App-Version, Sprache) übertragen; wie bei jeder Internetverbindung sieht RevenueCat dabei deine IP-Adresse. Meldest du dich für den Cloud-Sync an, wird die App-Nutzer-ID mit deinem Konto verknüpft, damit Premium auf deinen Geräten gilt. Grundlage für die Übermittlung in die USA sind die EU-Standardvertragsklauseln. Zahlungsdaten erhält weder die App noch RevenueCat. Die von Google bereitgestellte Bibliothek für Käufe (Google Play Billing) übermittelt außerdem technische Diagnosedaten zum Kaufvorgang an Google.</p>
 
 <h2>7. Weitere Dienste</h2>
-<p>Poster und Filminformationen werden bei The Movie Database (TMDB) anhand des Titels abgerufen. Watch Party überträgt Titel und Wiedergabeposition über Firebase an die Teilnehmer, die den Code kennen. Bei Wiedergabeproblemen misst die App auf Wunsch die Internetgeschwindigkeit über einen Cloudflare-Testserver, ohne Kontodaten. Deine IPTV-Anbieter erhalten die Anfragen, die zum Abspielen nötig sind; dafür gilt deren Datenschutzerklärung.</p>
+<p>Poster und Filminformationen werden bei The Movie Database (TMDB) anhand des Titels abgerufen. Watch Party überträgt Titel und Wiedergabeposition über Firebase an die Teilnehmer, die den Code kennen. Erkennt die App bei der Wiedergabe ein Netzproblem, misst sie automatisch die Internetgeschwindigkeit über einen Testserver von Cloudflare, damit der Hänger-Berater die passende Ursache anzeigen kann; dabei werden keine Kontodaten übertragen, Cloudflare sieht nur deine IP-Adresse. Senderlogos lädt die App teilweise von Wikimedia (upload.wikimedia.org), auch dabei wird deine IP-Adresse übertragen. Deine IPTV-Anbieter erhalten die Anfragen, die zum Abspielen nötig sind; dafür gilt deren Datenschutzerklärung.</p>
 
 <h2>8. Berechtigungen</h2>
 <p>Internet (Wiedergabe), Kamera (nur zum Scannen von QR-Codes), Speicher (Downloads und Aufnahmen), Benachrichtigungen (laufende Wiedergabe und Aufnahmen).</p>
@@ -67,7 +69,7 @@
 </main>
 <footer class="fuss-seite"><div class="rahmen">
   <div>© 2026 Kilian Hatze, Heßheim</div>
-  <nav aria-label="Rechtliches"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a><a href="mailto:kilihatze@gmail.com">Kontakt</a></nav>
+  <nav aria-label="Rechtliches"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a><a href="mailto:hatze.support@gmail.com">Kontakt</a></nav>
 </div></footer>
 </body>
 </html>
