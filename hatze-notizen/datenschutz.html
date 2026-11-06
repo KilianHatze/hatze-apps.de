@@ -22,7 +22,7 @@
 
 <article class="doc">
 <h1>Datenschutz – Hatze Notizen</h1>
-<p class="stand">Stand: 5. November 2026 · Gilt für Hatze Notizen unter Windows ab Version 2.0.</p>
+<p class="stand">Stand: 6. November 2026 · Gilt für Hatze Notizen unter Windows ab Version 2.0.</p>
 <h2>Verantwortlich</h2>
 <div class="box">
 <p><strong>Kilian Manuel Hatzenbühler</strong> (Entwicklername „Kilian Hatze“)</p>
@@ -39,8 +39,8 @@
 <h2>3. Funktionen, die eine Verbindung aufbauen</h2>
 <p>Im Auslieferungszustand baut Hatze Notizen keine Verbindung ins Internet auf. Das passiert nur in den folgenden Fällen, die du selbst auslöst:</p>
 <ul>
-<li><strong>Update-Prüfung:</strong> Trägst du in den Einstellungen eine Update-Quelle ein, fragt das Programm dort die aktuelle Versionsnummer ab, zum Beispiel bei GitHub. Der Server sieht dabei deine IP-Adresse; Notizinhalte werden nicht übertragen.</li>
-<li><strong>KI-Helfer:</strong> Hinterlegst du einen eigenen API-Schlüssel von Anthropic, kannst du markierten Text oder die geöffnete Notiz zum Zusammenfassen, Umformulieren, Korrigieren oder Weiterschreiben an Anthropic (Anthropic PBC, USA) senden. Gesendet wird nur, was du dabei auswählst, nie der ganze Vault. Die Übertragung läuft direkt von deinem Rechner zu Anthropic über dein eigenes Konto dort; es gelten die Bedingungen und die Datenschutzerklärung von Anthropic. Ich erhalte davon nichts.</li>
+<li><strong>Update-Prüfung:</strong> Ab Version 2.0.2 fragt das Programm beim ersten Start einmal, ob es beim Start nach neuen Versionen suchen soll. Nur wenn du zustimmst oder selbst eine Update-Quelle einträgst, ruft es dort die aktuelle Versionsnummer ab, standardmäßig aus meinem öffentlichen Verzeichnis bei GitHub. GitHub sieht dabei deine IP-Adresse; Notizinhalte werden nicht übertragen. Ändern kannst du das jederzeit unter Einstellungen → Updates.</li>
+<li><strong>KI-Helfer:</strong> Hinterlegst du einen eigenen API-Schlüssel von Anthropic, kannst du markierten Text oder die geöffnete Notiz zum Zusammenfassen, Umformulieren, Korrigieren oder Weiterschreiben an Anthropic (Anthropic PBC, USA) senden. Gesendet wird nur, was du dabei auswählst, nie der ganze Vault. Mit deinem Schlüssel lädt das Programm außerdem die Liste der verfügbaren Modelle bei Anthropic. Die Übertragung läuft direkt von deinem Rechner zu Anthropic über dein eigenes Konto dort; es gelten die Bedingungen und die Datenschutzerklärung von Anthropic. Ich erhalte davon nichts.</li>
 <li><strong>Freigabe im WLAN:</strong> Gibst du eine Notiz frei, ist sie über einen Link mit Zufallsschlüssel für Geräte in deinem lokalen Netzwerk erreichbar, bis du die Freigabe beendest. Dabei läuft nichts über einen fremden Server.</li>
 <li><strong>Bilder mit Web-Adresse:</strong> Enthält eine Notiz ein Bild, das per Web-Adresse eingebunden ist (etwa nach dem Einfügen aus einer Webseite oder dem Import aus einem Markdown-Ordner), lädt das Programm es beim Anzeigen vom jeweiligen Server. Dieser Server sieht dabei deine IP-Adresse. Bilder, die du als Datei einfügst, liegen in deinem Vault und werden nicht aus dem Netz geladen.</li>
 </ul>
