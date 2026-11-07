@@ -22,7 +22,7 @@
 
 <article class="doc">
 <h1>Datenschutz – Hatze Notizen</h1>
-<p class="stand">Stand: 6. November 2026 · Gilt für Hatze Notizen unter Windows ab Version 2.0.</p>
+<p class="stand">Stand: 7. November 2026 · Gilt für Hatze Notizen unter Windows ab Version 2.0 und für die Android-App ab Version 2.0.2.</p>
 <h2>Verantwortlich</h2>
 <div class="box">
 <p><strong>Kilian Manuel Hatzenbühler</strong> (Entwicklername „Kilian Hatze“)</p>
@@ -31,22 +31,22 @@
 </div>
 
 <h2>1. Grundsatz</h2>
-<p>Hatze Notizen ist ein Programm, das auf deinem Rechner läuft. Es gibt kein Konto, keinen Server von mir, keine Werbung, keine Nutzungsstatistik und keine Absturzberichte. Ich erhalte keine Daten über dich oder deine Notizen.</p>
+<p>Hatze Notizen ist ein Programm, das auf deinem Rechner oder Android-Gerät läuft. Es gibt kein Konto, keinen Server von mir, keine Werbung, keine Nutzungsstatistik und keine Absturzberichte. Ich erhalte keine Daten über dich oder deine Notizen. Die Android-App fordert als einzige Berechtigung den Internetzugang an, und zwar nur für die Funktionen in Abschnitt 3.</p>
 
 <h2>2. Deine Notizen</h2>
-<p>Notizen, Bilder, Anhänge, Zeichnungen, Versionsverlauf, Papierkorb und Backups speichert das Programm als Dateien in dem Ordner, den du selbst auswählst (dem „Vault“). Einstellungen liegen in deinem Windows-Benutzerprofil. Auf Wunsch verschlüsselt das Programm den Vault mit AES-256; das Passwort und der Wiederherstellungsschlüssel verlassen deinen Rechner nicht. Legst du den Vault in einen Cloud-Ordner wie OneDrive oder Dropbox, gelten für die Synchronisation die Bedingungen dieses Anbieters.</p>
+<p>Notizen, Bilder, Anhänge, Zeichnungen, Versionsverlauf, Papierkorb und Backups speichert das Programm als Dateien in dem Ordner, den du selbst auswählst (dem „Vault“). Einstellungen liegen in deinem Windows-Benutzerprofil. Unter Android liegen Vault und Einstellungen im privaten Speicher der App, auf den andere Apps keinen Zugriff haben; beim Deinstallieren löscht Android sie mit. Auf Wunsch verschlüsselt das Programm den Vault mit AES-256; das Passwort und der Wiederherstellungsschlüssel verlassen dein Gerät nicht. Legst du unter Windows den Vault in einen Cloud-Ordner wie OneDrive oder Dropbox, gelten für die Synchronisation die Bedingungen dieses Anbieters.</p>
 
 <h2>3. Funktionen, die eine Verbindung aufbauen</h2>
 <p>Im Auslieferungszustand baut Hatze Notizen keine Verbindung ins Internet auf. Das passiert nur in den folgenden Fällen, die du selbst auslöst:</p>
 <ul>
 <li><strong>Update-Prüfung:</strong> Ab Version 2.0.2 fragt das Programm beim ersten Start einmal, ob es beim Start nach neuen Versionen suchen soll. Nur wenn du zustimmst oder selbst eine Update-Quelle einträgst, ruft es dort die aktuelle Versionsnummer ab, standardmäßig aus meinem öffentlichen Verzeichnis bei GitHub. GitHub sieht dabei deine IP-Adresse; Notizinhalte werden nicht übertragen. Ändern kannst du das jederzeit unter Einstellungen → Updates.</li>
-<li><strong>KI-Helfer:</strong> Hinterlegst du einen eigenen API-Schlüssel von Anthropic, kannst du markierten Text oder die geöffnete Notiz zum Zusammenfassen, Umformulieren, Korrigieren oder Weiterschreiben an Anthropic (Anthropic PBC, USA) senden. Gesendet wird nur, was du dabei auswählst, nie der ganze Vault. Mit deinem Schlüssel lädt das Programm außerdem die Liste der verfügbaren Modelle bei Anthropic. Die Übertragung läuft direkt von deinem Rechner zu Anthropic über dein eigenes Konto dort; es gelten die Bedingungen und die Datenschutzerklärung von Anthropic. Ich erhalte davon nichts.</li>
+<li><strong>KI-Helfer:</strong> Hinterlegst du einen eigenen API-Schlüssel von Anthropic, kannst du markierten Text oder die geöffnete Notiz zum Zusammenfassen, Umformulieren, Korrigieren oder Weiterschreiben an Anthropic (Anthropic PBC, USA) senden. Gesendet wird nur, was du dabei auswählst, nie der ganze Vault. Mit deinem Schlüssel lädt das Programm außerdem die Liste der verfügbaren Modelle bei Anthropic. Die Übertragung läuft direkt von deinem Gerät zu Anthropic über dein eigenes Konto dort; es gelten die Bedingungen und die Datenschutzerklärung von Anthropic. Ich erhalte davon nichts.</li>
 <li><strong>Freigabe im WLAN:</strong> Gibst du eine Notiz frei, ist sie über einen Link mit Zufallsschlüssel für Geräte in deinem lokalen Netzwerk erreichbar, bis du die Freigabe beendest. Dabei läuft nichts über einen fremden Server.</li>
 <li><strong>Bilder mit Web-Adresse:</strong> Enthält eine Notiz ein Bild, das per Web-Adresse eingebunden ist (etwa nach dem Einfügen aus einer Webseite oder dem Import aus einem Markdown-Ordner), lädt das Programm es beim Anzeigen vom jeweiligen Server. Dieser Server sieht dabei deine IP-Adresse. Bilder, die du als Datei einfügst, liegen in deinem Vault und werden nicht aus dem Netz geladen.</li>
 </ul>
 
 <h2>4. Download</h2>
-<p>Die Installationsdateien liegen bei GitHub (GitHub, Inc., ein Unternehmen von Microsoft, USA). Beim Herunterladen verarbeitet GitHub deine IP-Adresse und technische Angaben deines Browsers; dafür gilt die Datenschutzerklärung von GitHub. Microsoft ist unter dem EU-US Data Privacy Framework zertifiziert.</p>
+<p>Die Installationsdateien für Windows und die Android-App (APK) liegen bei GitHub (GitHub, Inc., ein Unternehmen von Microsoft, USA). Beim Herunterladen verarbeitet GitHub deine IP-Adresse und technische Angaben deines Browsers; dafür gilt die Datenschutzerklärung von GitHub. Microsoft ist unter dem EU-US Data Privacy Framework zertifiziert.</p>
 
 <h2>5. Kontakt</h2>
 <p>Schreibst du mir eine E-Mail, verwende ich deine Adresse und Nachricht nur, um dir zu antworten.</p>
