@@ -131,6 +131,10 @@ a:focus-visible, .knopf:focus-visible { outline: 3px solid var(--gold); outline-
 /* Über mich / Support */
 .ueber { padding: 64px 0 24px; display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; }
 .ueber p { color: var(--grau); max-width: 34em; }
+.ich { display: flex; align-items: center; gap: 22px; margin: 0 0 32px; }
+.ich h2 { margin: 0; }
+.portrait { width: 112px; height: 112px; flex: none; border-radius: 50%; object-fit: cover; border: 3px solid #fff; box-shadow: 0 6px 20px rgba(20,17,12,.12); }
+@media (max-width: 520px) { .portrait { width: 84px; height: 84px; } .ich { gap: 16px; } }
 .kontakt { background: #fff; border: 1px solid var(--linie); border-radius: 22px; padding: 28px; align-self: start; }
 .kontakt h3 { font: 700 22px/1.2 var(--display); margin: 0 0 10px; }
 .kontakt p { margin: 0 0 16px; color: var(--grau); }
